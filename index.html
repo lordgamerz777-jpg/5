@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafe 22 | Park Circus, Kolkata — Global Cuisine & Late-Night Coffee</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            espresso: '#0F0C0A',
+            latte: '#1C1613',
+            amberGold: '#D4A373',
+            cream: '#FAF6F0',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-espresso text-cream font-sans antialiased selection:bg-amberGold selection:text-espresso">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-espresso/85 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+      <a href="#" class="font-serif text-2xl sm:text-3xl font-bold tracking-wider text-amberGold">
+        CAFE 22
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-cream/80">
+        <a href="#vibe" class="hover:text-amberGold transition">The Vibe</a>
+        <a href="#menu" class="hover:text-amberGold transition">Menu</a>
+        <a href="#reserve" class="hover:text-amberGold transition">Book a Table</a>
+        <a href="#location" class="hover:text-amberGold transition">Location</a>
+      </nav>
+      <a href="#reserve" class="bg-amberGold hover:bg-amberGold/90 text-espresso font-semibold text-sm px-5 py-2.5 rounded-full transition shadow-lg shadow-amberGold/10">
+        Reserve Table
+      </a>
+    </div>
+  </header>
+
+  <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src="./assets/hero-bg.jpg" alt="Cafe 22 Ambiance" class="w-full h-full object-cover object-center scale-105" />
+      <div class="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/75 to-espresso/50"></div>
+    </div>
+
+    <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-amberGold/30 text-amberGold text-xs sm:text-sm font-medium mb-6">
+        <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+        Open Late • Park Circus, Kolkata
+      </div>
+      <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold leading-tight mb-6">
+        Global Flavors & <br />
+        <span class="italic font-normal text-amberGold">Freshly Brewed</span> Nights
+      </h1>
+      <p class="text-cream/80 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+        From smoking hot sizzlers and artisan pastas to rich late-night espresso. Your cozy neighborhood escape at Congress Exhibition Road.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#menu" class="w-full sm:w-auto px-8 py-4 rounded-full bg-amberGold text-espresso font-bold hover:bg-amberGold/90 transition flex items-center justify-center gap-2">
+          Explore Signatures <i data-lucide="arrow-down" class="w-4 h-4"></i>
+        </a>
+        <a href="https://wa.me/916289427893?text=Hi%20Cafe%2022,%20I%20would%20like%20to%20book%20a%20table!" target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-full bg-white/10 hover:bg-white/15 border border-white/20 font-semibold transition flex items-center justify-center gap-2">
+          <i data-lucide="message-circle" class="w-4 h-4 text-green-400"></i> Instant WhatsApp Booking
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="vibe" class="py-20 max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-latte p-6 rounded-2xl border border-white/5">
+        <i data-lucide="clock" class="w-8 h-8 text-amberGold mb-4"></i>
+        <h3 class="font-serif text-xl font-bold mb-2">Late-Night Cravings</h3>
+        <p class="text-sm text-cream/70">Park Circus's favorite late-night spot for coffee, sizzlers, and conversations.</p>
+      </div>
+      <div class="bg-latte p-6 rounded-2xl border border-white/5">
+        <i data-lucide="utensils" class="w-8 h-8 text-amberGold mb-4"></i>
+        <h3 class="font-serif text-xl font-bold mb-2">Multi-Cuisine</h3>
+        <p class="text-sm text-cream/70">Italian pastas, Chinese wok specials, North Indian classics, and continental grills.</p>
+      </div>
+      <div class="bg-latte p-6 rounded-2xl border border-white/5">
+        <i data-lucide="coffee" class="w-8 h-8 text-amberGold mb-4"></i>
+        <h3 class="font-serif text-xl font-bold mb-2">Artisan Brews</h3>
+        <p class="text-sm text-cream/70">Handcrafted hot coffees, thick shakes, and refreshing mocktails made fresh to order.</p>
+      </div>
+      <div class="bg-latte p-6 rounded-2xl border border-white/5">
+        <i data-lucide="star" class="w-8 h-8 text-amberGold mb-4"></i>
+        <h3 class="font-serif text-xl font-bold mb-2">Cozy Ambiance</h3>
+        <p class="text-sm text-cream/70">Warm lighting, comfortable seating, and a welcoming vibe for friends and families.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="py-20 bg-latte/50 border-y border-white/5">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-amberGold text-xs uppercase tracking-widest font-bold">Curated Selection</span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold mt-2 mb-4">Our Signature Dishes</h2>
+        <p class="text-cream/70 text-sm sm:text-base">Average cost ₹1,200 for two • Tap any dish to add it to your WhatsApp pre-order or table reservation.</p>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-12">
+        <button onclick="filterMenu('all')" class="menu-tab active bg-amberGold text-espresso px-5 py-2 rounded-full text-sm font-bold transition" data-category="all">All Signatures</button>
+        <button onclick="filterMenu('coffee')" class="menu-tab bg-white/5 hover:bg-white/10 text-cream px-5 py-2 rounded-full text-sm font-medium transition" data-category="coffee">Coffee & Drinks</button>
+        <button onclick="filterMenu('sizzler')" class="menu-tab bg-white/5 hover:bg-white/10 text-cream px-5 py-2 rounded-full text-sm font-medium transition" data-category="sizzler">Sizzlers</button>
+        <button onclick="filterMenu('pasta')" class="menu-tab bg-white/5 hover:bg-white/10 text-cream px-5 py-2 rounded-full text-sm font-medium transition" data-category="pasta">Italian & Asian</button>
+        <button onclick="filterMenu('dessert')" class="menu-tab bg-white/5 hover:bg-white/10 text-cream px-5 py-2 rounded-full text-sm font-medium transition" data-category="dessert">Desserts</button>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="menu-grid">
+        <div class="menu-card bg-latte rounded-2xl overflow-hidden border border-white/10 flex flex-col justify-between group" data-category="coffee">
+          <div>
+            <div class="aspect-[4/3] overflow-hidden bg-black/40">
+              <img src="./assets/menu-coffee.jpg" alt="Signature Hazelnut Cappuccino" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            </div>
+            <div class="p-5">
+              <div class="flex justify-between items-start gap-2 mb-2">
+                <h3 class="font-serif text-lg font-bold">Hazelnut Cappuccino</h3>
+                <span class="text-amberGold font-bold">₹240</span>
+              </div>
+              <p class="text-xs text-cream/70 leading-relaxed">Rich double-shot espresso steamed with velvety micro-foam and roasted hazelnut notes.</p>
+            </div>
+          </div>
+          <div class="p-5 pt-0">
+            <a href="https://wa.me/916289427893?text=Hi%20Cafe%2022,%20I'd%20like%20to%20order/reserve%20the%20Hazelnut%20Cappuccino!" target="_blank" class="w-full py-2.5 rounded-xl bg-white/5 hover:bg-amberGold hover:text-espresso text-xs font-bold transition flex items-center justify-center gap-1.5">
+              <i data-lucide="plus-circle" class="w-4 h-4"></i> Order via WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="menu-card bg-latte rounded-2xl overflow-hidden border border-white/10 flex flex-col justify-between group" data-category="sizzler">
+          <div>
+            <div class="aspect-[4/3] overflow-hidden bg-black/40">
+              <img src="./assets/menu-sizzler.jpg" alt="Chef's Special Grilled Sizzler" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            </div>
+            <div class="p-5">
+              <div class="flex justify-between items-start gap-2 mb-2">
+                <h3 class="font-serif text-lg font-bold">Smoked Pepper Sizzler</h3>
+                <span class="text-amberGold font-bold">₹520</span>
+              </div>
+              <p class="text-xs text-cream/70 leading-relaxed">Chargrilled cottage cheese or chicken steak on a smoking cast-iron plate with herb rice & fries.</p>
+            </div>
+          </div>
+          <div class="p-5 pt-0">
+            <a href="https://wa.me/916289427893?text=Hi%20Cafe%2022,%20I'd%20like%20to%20order/reserve%20the%20Smoked%20Pepper%20Sizzler!" target="_blank" class="w-full py-2.5 rounded-xl bg-white/5 hover:bg-amberGold hover:text-espresso text-xs font-bold transition flex items-center justify-center gap-1.5">
+              <i data-lucide="plus-circle" class="w-4 h-4"></i> Order via WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="menu-card bg-latte rounded-2xl overflow-hidden border border-white/10 flex flex-col justify-between group" data-category="pasta">
+          <div>
+            <div class="aspect-[4/3] overflow-hidden bg-black/40">
+              <img src="./assets/menu-pasta.jpg" alt="Creamy Alfredo Penne" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            </div>
+            <div class="p-5">
+              <div class="flex justify-between items-start gap-2 mb-2">
+                <h3 class="font-serif text-lg font-bold">Truffle & Mushroom Penne</h3>
+                <span class="text-amberGold font-bold">₹390</span>
+              </div>
+              <p class="text-xs text-cream/70 leading-relaxed">Al dente penne tossed in a slow-simmered parmesan cream sauce with garlic bread.</p>
+            </div>
+          </div>
+          <div class="p-5 pt-0">
+            <a href="https://wa.me/916289427893?text=Hi%20Cafe%2022,%20I'd%20like%20to%20order/reserve%20the%20Truffle%20Mushroom%20Penne!" target="_blank" class="w-full py-2.5 rounded-xl bg-white/5 hover:bg-amberGold hover:text-espresso text-xs font-bold transition flex items-center justify-center gap-1.5">
+              <i data-lucide="plus-circle" class="w-4 h-4"></i> Order via WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="menu-card bg-latte rounded-2xl overflow-hidden border border-white/10 flex flex-col justify-between group" data-category="dessert">
+          <div>
+            <div class="aspect-[4/3] overflow-hidden bg-black/40">
+              <img src="./assets/menu-dessert.jpg" alt="Sizzling Brownie with Ice Cream" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            </div>
+            <div class="p-5">
+              <div class="flex justify-between items-start gap-2 mb-2">
+                <h3 class="font-serif text-lg font-bold">Sizzling Walnut Brownie</h3>
+                <span class="text-amberGold font-bold">₹290</span>
+              </div>
+              <p class="text-xs text-cream/70 leading-relaxed">Warm gooey dark chocolate walnut brownie topped with vanilla bean gelato and hot fudge.</p>
+            </div>
+          </div>
+          <div class="p-5 pt-0">
+            <a href="https://wa.me/916289427893?text=Hi%20Cafe%2022,%20I'd%20like%20to%20order/reserve%20the%20Sizzling%20Walnut%20Brownie!" target="_blank" class="w-full py-2.5 rounded-xl bg-white/5 hover:bg-amberGold hover:text-espresso text-xs font-bold transition flex items-center justify-center gap-1.5">
+              <i data-lucide="plus-circle" class="w-4 h-4"></i> Order via WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reserve" class="py-20 max-w-3xl mx-auto px-4 sm:px-6">
+    <div class="bg-latte p-8 sm:p-10 rounded-3xl border border-amberGold/20 shadow-2xl">
+      <div class="text-center mb-8">
+        <span class="text-amberGold text-xs uppercase tracking-widest font-bold">Skip the Queue</span>
+        <h2 class="font-serif text-3xl font-bold mt-1">Reserve Your Table</h2>
+        <p class="text-cream/70 text-sm mt-2">Instant confirmation directly on WhatsApp.</p>
+      </div>
+
+      <form onsubmit="sendReservation(event)" class="space-y-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs text-cream/70 mb-1">Your Name</label>
+            <input type="text" id="guestName" required placeholder="e.g. Mobashir Alam" class="w-full px-4 py-3 rounded-xl bg-espresso border border-white/10 text-cream focus:outline-none focus:border-amberGold text-sm" />
+          </div>
+          <div>
+            <label class="block text-xs text-cream/70 mb-1">Number of Guests</label>
+            <select id="guestCount" class="w-full px-4 py-3 rounded-xl bg-espresso border border-white/10 text-cream focus:outline-none focus:border-amberGold text-sm">
+              <option value="2 Guests">2 Guests</option>
+              <option value="4 Guests">4 Guests</option>
+              <option value="6+ Guests (Group)">6+ Guests (Group)</option>
+            </select>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs text-cream/70 mb-1">Preferred Time</label>
+            <input type="text" id="visitTime" required placeholder="e.g. Tonight at 9:30 PM" class="w-full px-4 py-3 rounded-xl bg-espresso border border-white/10 text-cream focus:outline-none focus:border-amberGold text-sm" />
+          </div>
+          <div>
+            <label class="block text-xs text-cream/70 mb-1">Special Request (Optional)</label>
+            <input type="text" id="specialReq" placeholder="e.g. Corner table / Birthday" class="w-full px-4 py-3 rounded-xl bg-espresso border border-white/10 text-cream focus:outline-none focus:border-amberGold text-sm" />
+          </div>
+        </div>
+        <button type="submit" class="w-full py-4 mt-2 rounded-xl bg-amberGold hover:bg-amberGold/90 text-espresso font-bold text-sm transition flex items-center justify-center gap-2">
+          <i data-lucide="send" class="w-4 h-4"></i> Confirm Booking via WhatsApp
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <footer id="location" class="bg-black/40 border-t border-white/10 py-14">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div>
+        <h3 class="font-serif text-2xl font-bold text-amberGold mb-3">CAFE 22</h3>
+        <p class="text-sm text-cream/70 leading-relaxed mb-4">
+          14, Congress Exhibition Road, Near Muskan, Park Circus, Ballygunge, Kolkata 700017.
+        </p>
+        <p class="text-sm text-amberGold font-semibold">Phone: +91 62894 27893</p>
+      </div>
+      <div>
+        <h4 class="font-bold text-sm uppercase tracking-wider text-cream/90 mb-3">Hours & Social</h4>
+        <p class="text-sm text-cream/70 mb-2">Open Daily • Late Night Dining & Coffee</p>
+        <a href="https://www.instagram.com/cafe22.in/" target="_blank" class="inline-flex items-center gap-2 text-sm text-amberGold hover:underline mt-2">
+          <i data-lucide="instagram" class="w-4 h-4"></i> Follow @cafe22.in on Instagram
+        </a>
+      </div>
+      <div>
+        <h4 class="font-bold text-sm uppercase tracking-wider text-cream/90 mb-3">Find Us in Park Circus</h4>
+        <a href="https://maps.google.com/?q=Cafe+22+14+Congress+Exhibition+Road+Park+Circus+Kolkata" target="_blank" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white/10 hover:bg-white/15 text-sm font-medium transition">
+          <i data-lucide="map-pin" class="w-4 h-4 text-amberGold"></i> Open in Google Maps
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    function filterMenu(category) {
+      const cards = document.querySelectorAll('.menu-card');
+      const tabs = document.querySelectorAll('.menu-tab');
+
+      tabs.forEach(tab => {
+        if (tab.dataset.category === category) {
+          tab.className = 'menu-tab active bg-amberGold text-espresso px-5 py-2 rounded-full text-sm font-bold transition';
+        } else {
+          tab.className = 'menu-tab bg-white/5 hover:bg-white/10 text-cream px-5 py-2 rounded-full text-sm font-medium transition';
+        }
+      });
+
+      cards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function sendReservation(e) {
+      e.preventDefault();
+      const name = document.getElementById('guestName').value;
+      const count = document.getElementById('guestCount').value;
+      const time = document.getElementById('visitTime').value;
+      const req = document.getElementById('specialReq').value || 'None';
+      const msg = `Hi Cafe 22! I'd like to reserve a table.%0A%0A*Name:* ${name}%0A*Guests:* ${count}%0A*Time:* ${time}%0A*Note:* ${req}`;
+      window.open(`https://wa.me/916289427893?text=${msg}`, '_blank');
+    }
+  </script>
+</body>
+</html>
